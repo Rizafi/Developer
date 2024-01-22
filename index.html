@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizafi.Dev</title>
+    <link rel="icon" type="image/png" href="/assets/logo fr.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <!-- //yellow : #F6D776-->
+  <!-- //white : #F1F6F9-->
+  <!-- //bg : #212A3E-->
+  <body>
+    <header
+      class="hero h-screen w-full flex text-[#F1F6F9] shadow-lg"
+      id="header"
+    >
+      <nav
+        class="w-[95%] h-20 px-10 py-5 items-center flex justify-end top-0 fixed right-0 bg-transparent"
+      >
+        <div class="link">
+          <ul class="flex gap-4 font-medium text-sm">
+            <li><a href="#header" class="anchor" onclick="a1()">HOME</a></li>
+            <li><a href="#about" class="anchor" onclick="a2()">ABOUT</a></li>
+            <li>
+              <a href="#portfolio" class="anchor" onclick="a3()">PORTFOLIO</a>
+            </li>
+            <li>
+              <a href="#project" class="anchor" onclick="a4()">PROJECT</a>
+            </li>
+            <li>
+              <a href="#contact" class="anchor" onclick="a5()">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <aside
+        class="left-0 fixed h-full w-20 bg-[#111620] flex flex-col justify-between"
+      >
+        <div class="brand bg-[#212A3E] w-20 h-20 flex">
+          <img
+            src="/assets/logo fr.png"
+            class="h-8 flex my-auto mx-auto"
+            alt="logo"
+          />
+        </div>
+        <div class="medsos flex justify-center mb-5">
+          <ul class="flex flex-col gap-3">
+            <li>
+              <a
+                href="https://wa.me/6285865719683/?text=Halo,+saya+mendapatkan+kontakmu+dari+Portofolio"
+                ><i class="bx bxl-whatsapp text-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Rizafi"
+                ><i class="bx bxl-github text-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/firmansyah-riza-afifudin-913316282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="bx bxl-linkedin text-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mas_rizafi?igsh=MTk3MmE1YWV6ZDNoOA=="
+                ><i class="bx bxl-instagram text-2xl"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="hero w-[95%] h-full right-0 flex">
+        <div class="text flex flex-col ml-56 gap-1 my-auto drop-shadow-sm">
+          <p class="text-sm">- Hello</p>
+          <h5 class="font-bold text-5xl">I'm Firmansyah Riza</h5>
+          <h5 class="font-bold text-4xl">
+            As <span class="typed text-[#eac146]" id="typed"></span>
+          </h5>
+          <p class="font-medium text-sm">Hello, nice to meet you!</p>
+          <p class="font-medium text-sm">Let's make some project with me.</p>
+          <button
+            class="bg-[#eac146] text-sm font-semibold w-32 h-8 text-[#202127] my-7 duration-200 hover:bg-[#202127] hover:text-[#eac146]"
+          >
+            GET IN TOUCH
+          </button>
+        </div>
+      </div>
+    </header>
+    <section
+      class="about bg-[#F1F6F9] text-[#202127] w-full h-screen flex"
+      id="about"
+    >
+      <div class="container flex flex-col items-center mx-auto my-auto gap-10">
+        <div class="top flex items-center">
+          <img src="/assets/avatar.jpg" alt="firza" class="h-72 shadow-md" />
+          <div class="text ml-10">
+            <p class="font-medium my-1">WHO AM I?</p>
+            <h5 class="text-2xl font-bold my-1 drop-shadow-lg">
+              Passionate with Web Development <br />
+              Mostly as Front End Developer & Graphic Designer.
+            </h5>
+            <p class="font-regular text-sm">
+              I am a programmer who is currently in high school. <br />
+              I have skills in the field of Web Development as a <br />
+              Front End Developer.
+            </p>
+            <button
+              class="bg-[#eac146] text-sm font-semibold w-32 h-8 text-[#202127] my-7 duration-200 hover:bg-[#202127] hover:text-[#eac146]"
+            >
+              DOWNLOAD CV
+            </button>
+          </div>
+        </div>
+        <div class="box flex gap-6">
+          <div class="box1 p-6 w-80 h-32 shadow-md flex items-center">
+            <i class="bx text-5xl bx-code-block"></i>
+            <div class="text px-3 flex flex-col gap-1">
+              <h5 class="h5 font-semibold">Front End Developer</h5>
+              <p class="text-xs font-normal">
+                Programming and building website from current design.
+              </p>
+            </div>
+          </div>
+          <div class="box1 p-6 w-80 h-32 shadow-md flex items-center">
+            <i class="bx text-5xl bx-camera-home"></i>
+            <div class="text px-3 flex flex-col gap-1">
+              <h5 class="h5 font-semibold">Content Creator</h5>
+              <p class="text-xs font-normal">
+                Active making content on social media.
+              </p>
+            </div>
+          </div>
+          <div class="box1 p-6 w-80 h-32 shadow-md flex items-center">
+            <i class="bx text-5xl bxl-deezer"></i>
+            <div class="text px-3 flex flex-col gap-1">
+              <h5 class="h5 font-semibold">Music Composer</h5>
+              <p class="text-xs font-normal">
+                Making music and publish on digital store.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="portfolio h-[80vh] w-full shadow-md"
+      id="portfolio"
+    ></section>
+    <script src="typed.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>
